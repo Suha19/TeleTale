@@ -28,3 +28,8 @@ A story writing and sharing app for those people who have stories to tell. They 
  -	Bootstrap
  -	Google Fonts
  -	Rubber Duckie
+# Work Steps
+
+ - I’ve started to create the React front-end application for the MERN stack application. 
+ - In this second part I’ve continued with building the back-end server based on Node.js, Express, and MongoDB.
+ - I’ve connected the Node.js / Express server to MongoDB by using the Mongoose library.

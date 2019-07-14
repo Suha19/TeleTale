@@ -3,6 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.4",
+    "morgan": "^1.9.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
@@ -30,5 +37,18 @@
   },
   "devDependencies": {
     "gh-pages": "^2.0.1"
-  }
+  },
+  "description": "TeleTale is a Full Stack Application base on The Telephone Game The Telephone Game is familiar to many people, as it has been around for years. The game remains popular because it can be played by any age and in many situations. A story writing and sharing app for those people who have stories to tell. They can access TeleTale to write a story which can be viewed, improved, and even further reviewed by other users. Only one player – the first – should know what the first story.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suha19/TeleTale.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Suha19/TeleTale/issues"
+  },
+  "homepage": "https://github.com/Suha19/TeleTale#readme",
+  "keywords": []
 }
