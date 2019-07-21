@@ -11,9 +11,6 @@ const {
 
 const User = require('../../models/User');
 
-// @route    POST api/users
-// @desc     Register user
-// @access   Public
 router.post(
     '/',
     [
@@ -70,9 +67,9 @@ router.post(
                 password
             });
 
-            const salt = await bcrypt.genSalt(10);
+            const hashPassword = await bcrypt.genSalt(10);
 
-            user.password = await bcrypt.hash(password, salt);
+            user.password = await bcrypt.hash(password, hashPassword);
 
             await user.save();
 
