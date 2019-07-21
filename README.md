@@ -37,3 +37,4 @@ A story writing and sharing app for those people who have stories to tell. They 
 - Express & MongoDB Setup
 - User API Routes & JWT Authentication
 - Create user profile
+- Create post by userID
