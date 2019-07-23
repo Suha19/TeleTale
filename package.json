@@ -22,7 +22,10 @@
     "request": "^2.88.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
