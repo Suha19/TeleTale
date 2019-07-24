@@ -1,7 +1,7 @@
 # Project Name [Telephone]
 
 TeleTale is a Full Stack Application base on The Telephone Game The Telephone Game is familiar to many people, as it has been around for years. The game remains popular because it can be played by any age and in many situations.
-A story writing and sharing app for those people who have stories to tell. They can access TeleTale to write a story which can be viewed, improved, and even further reviewed by other users. Only one player – the first – should know what the first story.
+A story writing and sharing app for those people who have stories to tell. They can access TeleTale to write a story which can be viewed, improved, and even further reviewed by other users.
 
 # The main purpose of the Telephone Game:
 
@@ -38,3 +38,4 @@ A story writing and sharing app for those people who have stories to tell. They 
 - User API Routes & JWT Authentication
 - Create user profile
 - Create post by userID
+- Create frontEnd react server

@@ -4,7 +4,7 @@ const router = express.Router();
 const {
     check,
     validationResult
-} = require('express-validator/check');
+} = require('express-validator');
 
 const Profile = require('../../models/Profile');
 const User = require('../../models/User');
