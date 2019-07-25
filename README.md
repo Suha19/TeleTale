@@ -17,7 +17,7 @@ A story writing and sharing app for those people who have stories to tell. They 
 
 # Technologies Used:
 
-- HTML
+- HTML5
 - CSS
 - JavaScript
 - Passport

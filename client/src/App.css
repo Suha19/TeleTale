@@ -332,7 +332,7 @@ button {
 /* Landing Page */
 .landing {
   position: relative;
-  /* background: url('') no-repeat center center/cover; */
+  background: url('./image/writer.jpg') no-repeat center center/cover;
   height: 100vh;
 }
 
