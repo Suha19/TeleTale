@@ -8,14 +8,14 @@ const initialState = [];
 export default function (state = initialState, action) {
     const {
         type,
-        data
+        payload
     } = action;
 
     switch (type) {
         case SET_ALERT:
-            return [...state, data];
+            return [...state, payload];
         case REMOVE_ALERT:
-            return state.filter(alert => alert.id !== data);
+            return state.filter(alert => alert.id !== payload);
         default:
             return state;
     }
