@@ -32,7 +32,7 @@ router.post(
                 errors: errors.array()
             });
         }
-
+        console.log(req.body)
         const {
             name,
             email,
