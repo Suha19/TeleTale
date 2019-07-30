@@ -1,5 +1,4 @@
 import React, { Fragment, useState } from 'react';
-// import axios from 'axios';
 import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setAlert } from '../../actions/alert';
@@ -25,27 +24,6 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
       setAlert('password do not match', 'danger');
     } else {
       register({ name, email, password });
-
-      // const newUser = {
-      //   name,
-      //   email,
-      //   password
-      // };
-      // console.log(newUser);
-      // try {
-      //   const config = {
-      //     header: {
-      //       'Content-Type': 'application/json'
-      //     }
-      //   };
-      //   const body = newUser;
-      //   console.log(body);
-      //   const res = await axios.post('/api/users', body, config);
-
-      //   console.log(res.data);
-      // } catch (err) {
-      //   console.log(err);
-      // }
     }
   };
 
