@@ -7,6 +7,8 @@ import Register from './components/auth/Register';
 import Alert from './components/layout/Alert';
 import Dashboard from './components/dashboard/Dashboasd';
 import PrivateRoute from './components/routing/PrivateRoute';
+import CreateProfile from './components/ProfileForm/CreateProfile';
+import EditProfile from './components/ProfileForm/EditProfile';
 // Redux
 import { Provider } from 'react-redux';
 import store from './store';
@@ -34,6 +36,16 @@ const App = () => {
             <Switch>
               <Route exact path='/Register' component={Register} />
               <Route exact path='/Login' component={Login} />
+              <PrivateRoute
+                exact
+                path='/create-profile'
+                component={CreateProfile}
+              />
+              <PrivateRoute
+                exact
+                path='/edit-profile'
+                component={EditProfile}
+              />
               <PrivateRoute exact path='/dashboard' component={Dashboard} />
             </Switch>
           </section>

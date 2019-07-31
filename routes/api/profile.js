@@ -40,6 +40,9 @@ router.post(
             check('age', 'Age is required')
             .not()
             .isEmpty(),
+            check('gender', 'Gender is required')
+            .not()
+            .isEmpty(),
             check('position', 'Job Position is required')
             .not()
             .isEmpty(),
@@ -57,6 +60,7 @@ router.post(
         }
         const {
             age,
+            gender,
             position,
             location
         } = req.body;
@@ -64,6 +68,7 @@ router.post(
         const profileFields = {};
         profileFields.user = req.user.id;
         if (age) profileFields.age = age;
+        if (gender) profileFields.gender = gender;
         if (position) profileFields.position = position;
         if (location) profileFields.location = location;
         console.log(profileFields)

@@ -360,15 +360,6 @@ button {
 }
 
 /* Profile Page */
-.profile-grid {
-  display: grid;
-  grid-template-areas:
-    'top top'
-    'about about'
-    'exp edu'
-    'github github';
-  grid-gap: 1rem;
-}
 
 .profile-top {
   grid-area: top;
@@ -394,13 +385,6 @@ button {
 
 .profile-about {
   grid-area: about;
-  text-align: center;
-}
-
-.profile-about .skills {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
@@ -499,14 +483,6 @@ button {
     margin: auto;
   }
 
-  .profile-grid {
-    grid-template-areas:
-      'top'
-      'about'
-      'exp'
-      'edu'
-      'github';
-  }
 
   .dash-buttons a {
     display: block;
