@@ -21,16 +21,19 @@ const EditProfile = ({
     getCurrentProfile();
     setFormData({
       age: loading || !profile.age ? '' : profile.age,
-      position: loading || !profile.position ? '' : profile.position,
-      location: loading || !profile.location ? '' : profile.location,
-      gender: loading || !profile.gender ? '' : profile.gender
+      position: loading || !profile.gender ? '' : profile.gender,
+      gender: loading || !profile.position ? '' : profile.position,
+      location: loading || !profile.location ? '' : profile.location
     });
   }, [loading, getCurrentProfile]);
 
   const { age, gender, position, location } = formData;
 
   const onChange = e =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
   const onSubmit = e => {
     e.preventDefault();
     createProfile(formData, history, true);
@@ -38,10 +41,11 @@ const EditProfile = ({
 
   return (
     <Fragment>
-      <h1 className='large text-primary'>Create Your Profile</h1>
+      <h1 className='large text-primary'> Create Your Profile </h1>{' '}
       <p className='lead'>
-        <i className='fas fa-user' /> let people get to know me better
-      </p>
+        <i className='fas fa-user' />
+        let people get to know me better{' '}
+      </p>{' '}
       <form className='form' onSubmit={e => onSubmit(e)}>
         <div className='form-group'>
           <input
@@ -50,10 +54,9 @@ const EditProfile = ({
             name='age'
             value={age}
             onChange={e => onChange(e)}
-          />
-          <small className='form-text'>Remember, age is just a number.</small>
+          />{' '}
+          <small className='form-text'> Remember, age is just a number. </small>{' '}
         </div>
-
         <div className='form-group'>
           <input
             type='text'
@@ -61,10 +64,12 @@ const EditProfile = ({
             name='position'
             value={position}
             onChange={e => onChange(e)}
-          />
-          <small className='form-text'>Give us an idea of What you do?</small>
+          />{' '}
+          <small className='form-text'>
+            {' '}
+            Give us an idea of What you do ?{' '}
+          </small>{' '}
         </div>
-
         <div className='form-group'>
           <input
             type='text'
@@ -72,12 +77,11 @@ const EditProfile = ({
             name='location'
             value={location}
             onChange={e => onChange(e)}
-          />
+          />{' '}
           <small className='form-text'>
-            City & state suggested (eg. Houston, TX)
-          </small>
+            City & state suggested(eg.Houston, TX){' '}
+          </small>{' '}
         </div>
-
         <div className='form-group'>
           <input
             type='text'
@@ -85,15 +89,14 @@ const EditProfile = ({
             name='gender'
             value={gender}
             onChange={e => onChange(e)}
-          />
-          <small className='form-text'>Female Male or Other</small>
+          />{' '}
+          <small className='form-text'> Female Male or Other </small>{' '}
         </div>
-
         <input type='submit' className='btn btn-primary my-1' />
         <Link className='btn btn-light my-1' to='/dashboard'>
-          Go Back
-        </Link>
-      </form>
+          Go Back{' '}
+        </Link>{' '}
+      </form>{' '}
     </Fragment>
   );
 };
@@ -108,5 +111,8 @@ const mapStateToProps = state => ({
 });
 export default connect(
   mapStateToProps,
-  { createProfile, getCurrentProfile }
+  {
+    createProfile,
+    getCurrentProfile
+  }
 )(withRouter(EditProfile));
