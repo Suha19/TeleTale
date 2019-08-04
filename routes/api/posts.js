@@ -16,7 +16,7 @@ router.post(
     [
         auth,
         [
-            check('story', 'Story is required')
+            check('text', 'Text is required')
             .not()
             .isEmpty()
         ]
@@ -33,7 +33,7 @@ router.post(
             const user = await User.findById(req.user.id).select('-password');
 
             const newPost = new Post({
-                story: req.body.story,
+                text: req.body.text,
                 name: user.name,
                 avatar: user.avatar,
                 user: req.user.id
@@ -49,18 +49,6 @@ router.post(
     }
 );
 
-// @route Get all users posts
-router.get('/', async (req, res) => {
-    try {
-        const posts = await Post.find().sort({
-            date: -1
-        });
-        res.json(posts);
-    } catch (err) {
-        console.error(err.message);
-        res.status(500).send('Server Error');
-    }
-});
 
 // @route Get one user posts by id
 router.get('/:id', auth, async (req, res) => {
