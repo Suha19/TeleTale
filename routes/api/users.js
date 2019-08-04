@@ -32,7 +32,7 @@ router.post(
                 errors: errors.array()
             });
         }
-        console.log(req.body)
+
         const {
             name,
             email,
@@ -67,9 +67,9 @@ router.post(
                 password
             });
 
-            const hashPassword = await bcrypt.genSalt(10);
+            const salt = await bcrypt.genSalt(10);
 
-            user.password = await bcrypt.hash(password, hashPassword);
+            user.password = await bcrypt.hash(password, salt);
 
             await user.save();
 
@@ -82,7 +82,7 @@ router.post(
             jwt.sign(
                 payload,
                 config.get('jwtSecret'), {
-                    expiresIn: 360000
+                    // expiresIn: 360000
                 },
                 (err, token) => {
                     if (err) throw err;
@@ -91,7 +91,6 @@ router.post(
                     });
                 }
             );
-            // res.send('User route');
         } catch (err) {
             console.error(err.message);
             res.status(500).send('Server error');

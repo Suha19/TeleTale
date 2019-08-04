@@ -7,7 +7,7 @@ const DashboardActions = () => {
       <Link to='/edit-profile' className='btn btn-light'>
         <i className='fas fa-user-circle text-primary' /> Edit Profile
       </Link>
-      <Link to='/add-Post' className='btn btn-light'>
+      <Link to='/posts' className='btn btn-light'>
         <i className='fas fa-pencil-alt text-primary' /> Write a Story
       </Link>
     </div>

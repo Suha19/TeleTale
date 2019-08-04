@@ -32,7 +32,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <ul>
       <li>
         <Link to='/'>
-          <i class='fas fa-feather' />
+          <i className='fas fa-feather' />
           TelaTale
         </Link>
       </li>
@@ -48,7 +48,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <nav className='navbar bg-dark'>
       <h1>
         <Link to='/'>
-          <i class='fas fa-feather' />
+          <i className='fas fa-feather' />
           TelaTale
         </Link>
       </h1>

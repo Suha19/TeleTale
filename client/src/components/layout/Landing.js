@@ -13,7 +13,7 @@ const Landing = ({ isAuthenticated }) => {
       <div className='dark-overlay'>
         <div className='landing-inner'>
           <h1 className='x-large'>
-            <i class='fas fa-feather' />
+            <i className='fas fa-feather' />
             TeleTale
           </h1>
           <p className='lead'>
