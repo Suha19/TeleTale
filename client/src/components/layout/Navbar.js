@@ -33,7 +33,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
       <li>
         <Link to='/'>
           <i className='fas fa-feather' />
-          TelaTale
+          TeleTale
         </Link>
       </li>
       <li>
@@ -49,7 +49,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
       <h1>
         <Link to='/'>
           <i className='fas fa-feather' />
-          TelaTale
+          TeleTale
         </Link>
       </h1>
       {!loading && (
