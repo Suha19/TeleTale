@@ -19,9 +19,11 @@
     "morgan": "^1.9.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-gravatar": "^2.6.3",
     "react-moment": "^0.9.2",
     "react-native-gravatar": "^1.0.2",
     "react-scripts": "3.0.1",
+    "react-user-avatar": "^1.10.0",
     "redux": "^4.0.4",
     "redux-devtools-extension": "^2.13.8",
     "request": "^2.88.0"

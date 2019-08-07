@@ -47,7 +47,7 @@ const Createprofile = ({ createProfile, history }) => {
             value={position}
             onChange={e => onChange(e)}
           />
-          <small className='form-text'>Give us an idea of What you do?</small>
+          <small className='form-text'>Give us an idea of what you do?</small>
         </div>
 
         <div className='form-group'>

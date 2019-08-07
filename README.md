@@ -1,41 +1,36 @@
-# Project Name [Telephone]
+# Telephone
 
-TeleTale is a Full Stack Application base on The Telephone Game The Telephone Game is familiar to many people, as it has been around for years. The game remains popular because it can be played by any age and in many situations.
-A story writing and sharing app for those people who have stories to tell. They can access TeleTale to write a story which can be viewed, improved, and even further reviewed by other users.
+TeleTale is a Full Stack Application base on The Telephone Game which we are all familiar with. The game remains popular because it can be played by any age and in many situations. With TeleTale you can write and share stories with people from all over the world. Players can read, add, and vote on stories that they like.
+This is an easy to use application, all you have to do is create your own account and start interacting!
+![image](https://user-images.githubusercontent.com/47680905/62643290-41226f80-b90d-11e9-92dc-db5e953bf137.png)
+![image](https://user-images.githubusercontent.com/47680905/62643466-a1b1ac80-b90d-11e9-8e24-26d432c4ebdb.png)
+![image](https://user-images.githubusercontent.com/47680905/62643411-89419200-b90d-11e9-802a-5786c1594136.png)
+![image](https://user-images.githubusercontent.com/47680905/62643574-d9205900-b90d-11e9-8eeb-d2b7cc43946e.png)
 
 # The main purpose of the Telephone Game:
 
-- It is fun for the players, generates laughs, and helps a group relax.
-- Serves as a springboard for discussing the importance of active reading.
-- For movie makers who are looking for some really cool and new stories from real life people, we've got here some for you.
+TeleTale is fun for the players, generates laughs, and helps players socialize. TeleTale could also encourage active reading and writing. For movie makers who are looking for some really cool and new stories from real life people, we've got creative ideas for you.
 
-# Developers [Suha Alobaidi]
+# Developers: Suha Alobaidi
 
 - GitHub (https://github.com/Suha19)
 - Likedin (https://www.linkedin.com/in/suha-alobaidi/)
-- Portfolio (https://github.com/Suha19/Personal-Portfolio)
+- Portfolio (https://suhaalobaidi.dev)
 
 # Technologies Used:
 
 - HTML5
 - CSS
 - JavaScript
+- Bootstrap
 - Passport
 - APIs
+- JSON
 - Heroku
-- Bootstrap
 - Google Fonts
 - Rubber Duckie
 - Node.js
-- Express
-- React
+- Express.js
+- React.js
 - Redux
 - MongoDB
-
-# Work Steps
-
-- Express & MongoDB Setup
-- User API Routes & JWT Authentication
-- Create user profile
-- Create post by userID
-- Create frontEnd react server
