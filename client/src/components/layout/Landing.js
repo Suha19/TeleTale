@@ -16,10 +16,7 @@ const Landing = ({ isAuthenticated }) => {
             <i className='fas fa-feather' />
             TeleTale
           </h1>
-          <p className='lead'>
-            Create a Writers profile write a story which can be viewed,
-            improved, and even further reviewed by other writers.
-          </p>
+          <p className='lead'>If a story is in you, it has got to come out.</p>
           <div className='buttons'>
             <Link to='/register' className='btn btn-primary'>
               Sign Up

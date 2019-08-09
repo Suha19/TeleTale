@@ -297,6 +297,14 @@ button {
   background: var(--light-color);
 }
 
+/* About */
+.about {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  padding: 4rem 2rem;
+}
+
 /* Navbar */
 .navbar {
   display: flex;

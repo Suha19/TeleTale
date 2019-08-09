@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <p className='lead'>
+    <p className='about'>
       If you usually have difficulty brainstorming storyline ideas, then this
       application is perfect for you. Get out of the rut of writers’ block! A
       little help from other creative minds can spark your imagination and
