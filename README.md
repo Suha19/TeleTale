@@ -26,7 +26,7 @@ TeleTale is fun for the players, generates laughs, and helps players socialize. 
 - CSS
 - JavaScript
 - Bootstrap
-- Passport
+- JWT authentication
 - APIs
 - JSON
 - Heroku
